@@ -12,9 +12,9 @@ public class Calcul implements Conjoncion {
     public String et(Boolean affirmation1, Boolean affirmation2) {
         String calculusDit;
         if(affirmation1 && affirmation2){
-            calculusDit = "C'est faux";
-        }else {
             calculusDit = "C'est vrai";
+        }else {
+            calculusDit = "C'est faux";
         }
         return calculusDit;
     }
