@@ -28,4 +28,12 @@ public class CalculTest {
         assertEquals("C'est vrai", calcul.ou(false, true), "Au moins une des affirmations est vraie.");
         assertEquals("C'est faux", calcul.ou(false, false), "Les deux affirmations sont fausses.");
     }
+
+    @Test
+    public void testDonc() {
+        assertEquals("C'est vrai", calcul.donc(true, true), "L'affirmation1 est vraie et l'affirmation2 est vraie.");
+        assertEquals("C'est faux", calcul.donc(true, false), "L'affirmation1 est vraie et l'affirmation2 est fausse.");
+        assertEquals("C'est vrai", calcul.donc(false, true), "L'affirmation1 est fausse et l'affirmation2 est vraie.");
+        assertEquals("C'est vrai", calcul.donc(false, false), "L'affirmation1 est fausse et l'affirmation2 est fausse.");
+    }
 }
