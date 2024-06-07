@@ -11,7 +11,7 @@ public class Calcul implements Conjoncion {
     @Override
     public String et(Boolean affirmation1, Boolean affirmation2) {
         String calculusDit;
-        if(affirmation1 = affirmation2 = true){
+        if(affirmation1 && affirmation2){
             calculusDit = "C'est faux";
         }else {
             calculusDit = "C'est vrai";
