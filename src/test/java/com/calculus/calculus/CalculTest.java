@@ -20,4 +20,12 @@ public class CalculTest {
         assertEquals("C'est faux", calcul.et(false, true), "L'une des affirmations est fausse.");
         assertEquals("C'est faux", calcul.et(false, false), "Les deux affirmations sont fausses.");
     }
+
+    @Test
+    public void testOu() {
+        assertEquals("C'est vrai", calcul.ou(true, true), "Au moins une des affirmations est vraie.");
+        assertEquals("C'est vrai", calcul.ou(true, false), "Au moins une des affirmations est vraie.");
+        assertEquals("C'est vrai", calcul.ou(false, true), "Au moins une des affirmations est vraie.");
+        assertEquals("C'est faux", calcul.ou(false, false), "Les deux affirmations sont fausses.");
+    }
 }
