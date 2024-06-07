@@ -1,10 +1,10 @@
 package com.calculus.calculus.calcul;
 
-import com.calculus.calculus.affirmation.Conjoncion;
+import com.calculus.calculus.affirmation.Conjonction;
 import com.calculus.calculus.affirmation.Mensonge;
 import com.calculus.calculus.affirmation.Verite;
 
-public class Calcul implements Conjoncion {
+public class Calcul implements Conjonction {
     Mensonge monsonge = new Mensonge();
     Verite verite = new Verite();
 
